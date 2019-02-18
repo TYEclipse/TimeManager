@@ -7,7 +7,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    eventLog = new EventLog("EventLog.txt");
+
+    QString logName="EventLog.txt";
+    eventLog = new EventLog(logName);
 
     eventLog->ReadLog();
 

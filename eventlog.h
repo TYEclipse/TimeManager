@@ -9,7 +9,7 @@ class EventLog
 {
 
 public:
-    EventLog(QString logname);
+    EventLog(const QString & logname);
     ~EventLog();
 
     void ReadLog();

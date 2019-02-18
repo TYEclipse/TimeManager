@@ -1,7 +1,7 @@
 #include "eventlog.h"
 #include <QTextStream>
 #include <QDebug>
-EventLog::EventLog(QString logname)
+EventLog::EventLog(const QString & logname)
 {
     logFile = new QFile(logname);
 }
