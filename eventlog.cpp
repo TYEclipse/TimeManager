@@ -26,6 +26,12 @@ void EventLog::ReadLog()
         Events.append(event);
         line = in.readLine();
     }
+    foreach (QString event, Events) {
+        if(EventList.indexOf(event)<0)
+        {
+            EventList.append(event);
+        }
+    }
     logFile->close();
 }
 

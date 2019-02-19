@@ -17,6 +17,7 @@ public:
 
     QList<QString> Dates;
     QList<QString> Events;
+    QList<QString> EventList;
 
 private:
     QFile * logFile;
